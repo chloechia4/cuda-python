@@ -1,0 +1,1458 @@
+Using pip 24.2 from /home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages/pip (python 3.12)
+Obtaining file:///home/rladmin/cchia/cuda-python/cuda_bindings
+  Installing build dependencies: started
+  Running command pip subprocess to install build dependencies
+  Using pip 24.2 from /home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages/pip (python 3.12)
+  Collecting setuptools>=77.0.0
+    Obtaining dependency information for setuptools>=77.0.0 from https://files.pythonhosted.org/packages/a3/dc/17031897dae0efacfea57dfd3a82fdd2a2aeb58e0ff71b77b87e44edc772/setuptools-80.9.0-py3-none-any.whl.metadata
+    Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+  Collecting cython<3.2,>=3.1
+    Obtaining dependency information for cython<3.2,>=3.1 from https://files.pythonhosted.org/packages/34/f8/0b98537f0b4e8c01f76d2a6cf75389987538e4d4ac9faf25836fd18c9689/cython-3.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata
+    Downloading cython-3.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.0 kB)
+  Collecting pyclibrary>=0.1.7
+    Obtaining dependency information for pyclibrary>=0.1.7 from https://files.pythonhosted.org/packages/56/2f/5b214a00afd5407d7e174a35e8244174f6f4445a0a9f0a55cafd209af963/pyclibrary-0.3.0-py3-none-any.whl.metadata
+    Using cached pyclibrary-0.3.0-py3-none-any.whl.metadata (4.9 kB)
+  Collecting pyparsing<4,>=2.3.1 (from pyclibrary>=0.1.7)
+    Obtaining dependency information for pyparsing<4,>=2.3.1 from https://files.pythonhosted.org/packages/10/5e/1aa9a93198c6b64513c9d7752de7422c06402de6600a8767da1524f9570b/pyparsing-3.2.5-py3-none-any.whl.metadata
+    Using cached pyparsing-3.2.5-py3-none-any.whl.metadata (5.0 kB)
+  Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+  Downloading cython-3.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 49.7 MB/s eta 0:00:00
+  Using cached pyclibrary-0.3.0-py3-none-any.whl (562 kB)
+  Using cached pyparsing-3.2.5-py3-none-any.whl (113 kB)
+  Installing collected packages: setuptools, pyparsing, cython, pyclibrary
+    Creating /tmp/pip-build-env-qjb8153c/overlay/bin
+    changing mode of /tmp/pip-build-env-qjb8153c/overlay/bin/cygdb to 775
+    changing mode of /tmp/pip-build-env-qjb8153c/overlay/bin/cython to 775
+    changing mode of /tmp/pip-build-env-qjb8153c/overlay/bin/cythonize to 775
+  Successfully installed cython-3.1.4 pyclibrary-0.3.0 pyparsing-3.2.5 setuptools-80.9.0
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Running command Checking if build backend supports build_editable
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Running command Getting requirements to build editable
+  performance hint: ./cuda/bindings/_internal/cufile.pxd:18:24: No exception value declared for '_cuFileRead' in pxd file.
+  Users cimporting this function and calling it without the gil will always require an exception check.
+  Suggest adding an explicit exception value.
+  performance hint: ./cuda/bindings/_internal/cufile.pxd:19:25: No exception value declared for '_cuFileWrite' in pxd file.
+  Users cimporting this function and calling it without the gil will always require an exception check.
+  Suggest adding an explicit exception value.
+  performance hint: ./cuda/bindings/_internal/cufile.pxd:22:25: No exception value declared for '_cuFileUseCount' in pxd file.
+  Users cimporting this function and calling it without the gil will always require an exception check.
+  Suggest adding an explicit exception value.
+  performance hint: cuda/bindings/cufile.pyx:1082:27: Exception check after calling 'cuFileRead' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'cuFileRead' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/cufile.pyx:1099:28: Exception check after calling 'cuFileWrite' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'cuFileWrite' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/cufile.pyx:1119:31: Exception check after calling 'cuFileUseCount' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'cuFileUseCount' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: ./cuda/bindings/cycufile.pxd:333:23: No exception value declared for 'cuFileRead' in pxd file.
+  Users cimporting this function and calling it without the gil will always require an exception check.
+  Suggest adding an explicit exception value.
+  performance hint: ./cuda/bindings/cycufile.pxd:334:24: No exception value declared for 'cuFileWrite' in pxd file.
+  Users cimporting this function and calling it without the gil will always require an exception check.
+  Suggest adding an explicit exception value.
+  performance hint: ./cuda/bindings/cycufile.pxd:337:24: No exception value declared for 'cuFileUseCount' in pxd file.
+  Users cimporting this function and calling it without the gil will always require an exception check.
+  Suggest adding an explicit exception value.
+  performance hint: cuda/bindings/cycufile.pyx:33:30: Exception check after calling '_cuFileRead' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare '_cuFileRead' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/cycufile.pyx:37:31: Exception check after calling '_cuFileWrite' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare '_cuFileWrite' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/cycufile.pyx:49:34: Exception check after calling '_cuFileUseCount' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare '_cuFileUseCount' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/runtime.pyx:24749:45: Exception check after calling 'cudaCreateChannelDesc' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'cudaCreateChannelDesc' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/runtime.pyx:31184:43: Exception check after calling 'make_cudaPitchedPtr' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'make_cudaPitchedPtr' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/runtime.pyx:31217:36: Exception check after calling 'make_cudaPos' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'make_cudaPos' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/runtime.pyx:31251:39: Exception check after calling 'make_cudaExtent' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'make_cudaExtent' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  Parsing headers in "['/usr/local/cuda/include']" (Caching = False)
+  Parsing driver headers
+  Found CUDA_VERSION: 13000
+  Parsing runtime headers
+  Parsing nvrtc headers
+  Generating cuda/bindings/cyruntime.pxd.in
+  Generating cuda/bindings/cydriver.pyx.in
+  Generating cuda/bindings/cynvrtc.pyx.in
+  Generating cuda/bindings/driver.pxd.in
+  Generating cuda/bindings/runtime.pyx.in
+  Generating cuda/bindings/cydriver.pxd.in
+  Generating cuda/bindings/cyruntime_types.pxi.in
+  Generating cuda/bindings/driver.pyx.in
+  Generating cuda/bindings/nvrtc.pyx.in
+  Generating cuda/bindings/cyruntime_functions.pxi.in
+  Generating cuda/bindings/nvrtc.pxd.in
+  Generating cuda/bindings/runtime.pxd.in
+  Generating cuda/bindings/cynvrtc.pxd.in
+  Generating cuda/bindings/cyruntime.pyx.in
+  Generating cuda/bindings/_bindings/cyruntime.pxd.in
+  Generating cuda/bindings/_bindings/cydriver.pyx.in
+  Generating cuda/bindings/_bindings/cynvrtc.pyx.in
+  Generating cuda/bindings/_bindings/cydriver.pxd.in
+  Generating cuda/bindings/_bindings/cyruntime_ptds.pyx.in
+  Generating cuda/bindings/_bindings/cyruntime_ptds.pxd.in
+  Generating cuda/bindings/_bindings/cynvrtc.pxd.in
+  Generating cuda/bindings/_bindings/cyruntime.pyx.in
+  Generating cuda/bindings/_lib/utils.pxd.in
+  Generating cuda/bindings/_lib/utils.pxi.in
+  Compiling cuda/bindings/_bindings/cydriver.pyx because it changed.
+  Compiling cuda/bindings/_bindings/cynvrtc.pyx because it changed.
+  Compiling cuda/bindings/_bindings/cyruntime.pyx because it changed.
+  Compiling cuda/bindings/_bindings/cyruntime_ptds.pyx because it changed.
+  Compiling cuda/bindings/cynvrtc.pyx because it changed.
+  Compiling cuda/bindings/cyruntime.pyx because it changed.
+  Compiling cuda/bindings/cydriver.pyx because it changed.
+  Compiling cuda/bindings/cynvjitlink.pyx because it changed.
+  Compiling cuda/bindings/nvrtc.pyx because it changed.
+  Compiling cuda/bindings/cynvvm.pyx because it changed.
+  Compiling cuda/bindings/cufile.pyx because it changed.
+  Compiling cuda/bindings/cycufile.pyx because it changed.
+  Compiling cuda/bindings/runtime.pyx because it changed.
+  Compiling cuda/bindings/nvvm.pyx because it changed.
+  Compiling cuda/bindings/nvjitlink.pyx because it changed.
+  Compiling cuda/bindings/driver.pyx because it changed.
+  Compiling cuda/bindings/_internal/utils.pyx because it changed.
+  Compiling cuda/bindings/_internal/cufile.pyx because it changed.
+  Compiling cuda/bindings/_internal/nvvm.pyx because it changed.
+  Compiling cuda/bindings/_internal/nvjitlink.pyx because it changed.
+  [ 1/20] Cythonizing cuda/bindings/_bindings/cydriver.pyx
+  [ 2/20] Cythonizing cuda/bindings/_bindings/cynvrtc.pyx
+  [ 3/20] Cythonizing cuda/bindings/_bindings/cyruntime.pyx
+  [ 4/20] Cythonizing cuda/bindings/_bindings/cyruntime_ptds.pyx
+  [ 5/20] Cythonizing cuda/bindings/_internal/cufile.pyx
+  [ 6/20] Cythonizing cuda/bindings/_internal/nvjitlink.pyx
+  [ 7/20] Cythonizing cuda/bindings/_internal/nvvm.pyx
+  [ 8/20] Cythonizing cuda/bindings/_internal/utils.pyx
+  [ 9/20] Cythonizing cuda/bindings/cufile.pyx
+  [10/20] Cythonizing cuda/bindings/cycufile.pyx
+  [11/20] Cythonizing cuda/bindings/cydriver.pyx
+  [12/20] Cythonizing cuda/bindings/cynvjitlink.pyx
+  [13/20] Cythonizing cuda/bindings/cynvrtc.pyx
+  [14/20] Cythonizing cuda/bindings/cynvvm.pyx
+  [15/20] Cythonizing cuda/bindings/cyruntime.pyx
+  [16/20] Cythonizing cuda/bindings/driver.pyx
+  [17/20] Cythonizing cuda/bindings/nvjitlink.pyx
+  [18/20] Cythonizing cuda/bindings/nvrtc.pyx
+  [19/20] Cythonizing cuda/bindings/nvvm.pyx
+  [20/20] Cythonizing cuda/bindings/runtime.pyx
+  running egg_info
+  creating cuda_bindings.egg-info
+  writing cuda_bindings.egg-info/PKG-INFO
+  writing dependency_links to cuda_bindings.egg-info/dependency_links.txt
+  writing requirements to cuda_bindings.egg-info/requires.txt
+  writing top-level names to cuda_bindings.egg-info/top_level.txt
+  writing manifest file 'cuda_bindings.egg-info/SOURCES.txt'
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  reading manifest file 'cuda_bindings.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no previously-included files found matching 'cuda/bindings'
+  warning: no previously-included files found matching 'cuda?bindings'
+  warning: no previously-included files found matching 'cuda/bindings/_bindings'
+  warning: no previously-included files found matching 'cuda?bindings?_bindings'
+  adding license file 'LICENSE'
+  writing manifest file 'cuda_bindings.egg-info/SOURCES.txt'
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Running command Preparing editable metadata (pyproject.toml)
+  Parsing headers in "['/usr/local/cuda/include']" (Caching = False)
+  Parsing driver headers
+  Found CUDA_VERSION: 13000
+  Parsing runtime headers
+  Parsing nvrtc headers
+  Skipping cuda/bindings/cyruntime.pxd.in (No change)
+  Skipping cuda/bindings/cydriver.pyx.in (No change)
+  Skipping cuda/bindings/cynvrtc.pyx.in (No change)
+  Skipping cuda/bindings/driver.pxd.in (No change)
+  Skipping cuda/bindings/runtime.pyx.in (No change)
+  Skipping cuda/bindings/cydriver.pxd.in (No change)
+  Skipping cuda/bindings/cyruntime_types.pxi.in (No change)
+  Skipping cuda/bindings/driver.pyx.in (No change)
+  Skipping cuda/bindings/nvrtc.pyx.in (No change)
+  Skipping cuda/bindings/cyruntime_functions.pxi.in (No change)
+  Skipping cuda/bindings/nvrtc.pxd.in (No change)
+  Skipping cuda/bindings/runtime.pxd.in (No change)
+  Skipping cuda/bindings/cynvrtc.pxd.in (No change)
+  Skipping cuda/bindings/cyruntime.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cydriver.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cynvrtc.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cydriver.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime_ptds.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime_ptds.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cynvrtc.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime.pyx.in (No change)
+  Skipping cuda/bindings/_lib/utils.pxd.in (No change)
+  Skipping cuda/bindings/_lib/utils.pxi.in (No change)
+  running dist_info
+  creating /tmp/pip-modern-metadata-0fviv8w5/cuda_bindings.egg-info
+  writing /tmp/pip-modern-metadata-0fviv8w5/cuda_bindings.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-modern-metadata-0fviv8w5/cuda_bindings.egg-info/dependency_links.txt
+  writing requirements to /tmp/pip-modern-metadata-0fviv8w5/cuda_bindings.egg-info/requires.txt
+  writing top-level names to /tmp/pip-modern-metadata-0fviv8w5/cuda_bindings.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-modern-metadata-0fviv8w5/cuda_bindings.egg-info/SOURCES.txt'
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  reading manifest file '/tmp/pip-modern-metadata-0fviv8w5/cuda_bindings.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no previously-included files found matching 'cuda/bindings'
+  warning: no previously-included files found matching 'cuda?bindings'
+  warning: no previously-included files found matching 'cuda/bindings/_bindings'
+  warning: no previously-included files found matching 'cuda?bindings?_bindings'
+  adding license file 'LICENSE'
+  writing manifest file '/tmp/pip-modern-metadata-0fviv8w5/cuda_bindings.egg-info/SOURCES.txt'
+  creating '/tmp/pip-modern-metadata-0fviv8w5/cuda_bindings-13.0.1.dist-info'
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: cuda-pathfinder~=1.1 in /home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages (from cuda-bindings==13.0.1) (1.2.3)
+Building wheels for collected packages: cuda-bindings
+  Building editable for cuda-bindings (pyproject.toml): started
+  Running command Building editable for cuda-bindings (pyproject.toml)
+  Parsing headers in "['/usr/local/cuda/include']" (Caching = False)
+  Parsing driver headers
+  Found CUDA_VERSION: 13000
+  Parsing runtime headers
+  Parsing nvrtc headers
+  Skipping cuda/bindings/cyruntime.pxd.in (No change)
+  Skipping cuda/bindings/cydriver.pyx.in (No change)
+  Skipping cuda/bindings/cynvrtc.pyx.in (No change)
+  Skipping cuda/bindings/driver.pxd.in (No change)
+  Skipping cuda/bindings/runtime.pyx.in (No change)
+  Skipping cuda/bindings/cydriver.pxd.in (No change)
+  Skipping cuda/bindings/cyruntime_types.pxi.in (No change)
+  Skipping cuda/bindings/driver.pyx.in (No change)
+  Skipping cuda/bindings/nvrtc.pyx.in (No change)
+  Skipping cuda/bindings/cyruntime_functions.pxi.in (No change)
+  Skipping cuda/bindings/nvrtc.pxd.in (No change)
+  Skipping cuda/bindings/runtime.pxd.in (No change)
+  Skipping cuda/bindings/cynvrtc.pxd.in (No change)
+  Skipping cuda/bindings/cyruntime.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cydriver.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cynvrtc.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cydriver.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime_ptds.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime_ptds.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cynvrtc.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime.pyx.in (No change)
+  Skipping cuda/bindings/_lib/utils.pxd.in (No change)
+  Skipping cuda/bindings/_lib/utils.pxi.in (No change)
+  running editable_wheel
+  creating /tmp/pip-wheel-307jr7ub/.tmp-tltbeoq5/cuda_bindings.egg-info
+  writing /tmp/pip-wheel-307jr7ub/.tmp-tltbeoq5/cuda_bindings.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-wheel-307jr7ub/.tmp-tltbeoq5/cuda_bindings.egg-info/dependency_links.txt
+  writing requirements to /tmp/pip-wheel-307jr7ub/.tmp-tltbeoq5/cuda_bindings.egg-info/requires.txt
+  writing top-level names to /tmp/pip-wheel-307jr7ub/.tmp-tltbeoq5/cuda_bindings.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-wheel-307jr7ub/.tmp-tltbeoq5/cuda_bindings.egg-info/SOURCES.txt'
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  reading manifest file '/tmp/pip-wheel-307jr7ub/.tmp-tltbeoq5/cuda_bindings.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no previously-included files found matching 'cuda/bindings'
+  warning: no previously-included files found matching 'cuda?bindings'
+  warning: no previously-included files found matching 'cuda/bindings/_bindings'
+  warning: no previously-included files found matching 'cuda?bindings?_bindings'
+  adding license file 'LICENSE'
+  writing manifest file '/tmp/pip-wheel-307jr7ub/.tmp-tltbeoq5/cuda_bindings.egg-info/SOURCES.txt'
+  creating '/tmp/pip-wheel-307jr7ub/.tmp-tltbeoq5/cuda_bindings-13.0.1.dist-info'
+  creating /tmp/pip-wheel-307jr7ub/.tmp-tltbeoq5/cuda_bindings-13.0.1.dist-info/WHEEL
+  running build_py
+  running build_ext
+  building 'cuda.bindings._bindings.cydriver' extension
+  creating /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_bindings
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I./cuda/bindings/_bindings -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_bindings/cydriver.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_bindings/cydriver.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I./cuda/bindings/_bindings -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_bindings/loader.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_bindings/loader.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  creating /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_bindings
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_bindings/cydriver.o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_bindings/loader.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_bindings/cydriver.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings._bindings.cynvrtc' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_bindings/cynvrtc.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_bindings/cynvrtc.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_bindings/cynvrtc.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_bindings/cynvrtc.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings._bindings.cyruntime' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_bindings/cyruntime.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_bindings/cyruntime.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_bindings/cyruntime.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -lcudart_static -lrt -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_bindings/cyruntime.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings._bindings.cyruntime_ptds' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_bindings/cyruntime_ptds.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_bindings/cyruntime_ptds.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_bindings/cyruntime_ptds.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -lcudart_static -lrt -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_bindings/cyruntime_ptds.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cynvrtc' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cynvrtc.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cynvrtc.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cynvrtc.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cynvrtc.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cyruntime' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cyruntime.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cyruntime.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cyruntime.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cyruntime.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cydriver' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cydriver.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cydriver.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cydriver.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cydriver.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cynvjitlink' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cynvjitlink.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cynvjitlink.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cynvjitlink.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cynvjitlink.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.nvrtc' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I./cuda/bindings/_lib -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/nvrtc.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/nvrtc.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/nvrtc.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/nvrtc.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cynvvm' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cynvvm.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cynvvm.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cynvvm.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cynvvm.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cufile' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cufile.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cufile.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  cuda/bindings/cufile.cpp: In function ‘PyObject* __pyx_f_4cuda_8bindings_6cufile_read_async(intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, int)’:
+  cuda/bindings/cufile.cpp:26033:295: warning: invalid conversion from ‘void*’ to ‘CUstream’ {aka ‘CUstream_st*’} [-fpermissive]
+  26033 |         __pyx_t_1 = __pyx_f_4cuda_8bindings_8cycufile_cuFileReadAsync(((__pyx_t_4cuda_8bindings_6cufile_Handle)__pyx_v_fh), ((void *)__pyx_v_buf_ptr_base), ((size_t *)__pyx_v_size_p), ((off_t *)__pyx_v_file_offset_p), ((off_t *)__pyx_v_buf_ptr_offset_p), ((Py_ssize_t *)__pyx_v_bytes_read_p), ((void *)__pyx_v_stream)); if (unlikely(__pyx_t_1 == CUFILE_LOADING_ERROR && __Pyx_ErrOccurredWithGIL())) __PYX_ERR(0, 1221, __pyx_L4_error)
+        |                                                                                                                                                                                                                                                                                                      ~^~~~~~~~~~~~~~~~~~~~~~~
+        |                                                                                                                                                                                                                                                                                                       |
+        |                                                                                                                                                                                                                                                                                                       void*
+  cuda/bindings/cufile.cpp: In function ‘PyObject* __pyx_f_4cuda_8bindings_6cufile_write_async(intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, int)’:
+  cuda/bindings/cufile.cpp:26295:299: warning: invalid conversion from ‘void*’ to ‘CUstream’ {aka ‘CUstream_st*’} [-fpermissive]
+  26295 |         __pyx_t_1 = __pyx_f_4cuda_8bindings_8cycufile_cuFileWriteAsync(((__pyx_t_4cuda_8bindings_6cufile_Handle)__pyx_v_fh), ((void *)__pyx_v_buf_ptr_base), ((size_t *)__pyx_v_size_p), ((off_t *)__pyx_v_file_offset_p), ((off_t *)__pyx_v_buf_ptr_offset_p), ((Py_ssize_t *)__pyx_v_bytes_written_p), ((void *)__pyx_v_stream)); if (unlikely(__pyx_t_1 == CUFILE_LOADING_ERROR && __Pyx_ErrOccurredWithGIL())) __PYX_ERR(0, 1227, __pyx_L4_error)
+        |                                                                                                                                                                                                                                                                                                          ~^~~~~~~~~~~~~~~~~~~~~~~
+        |                                                                                                                                                                                                                                                                                                           |
+        |                                                                                                                                                                                                                                                                                                           void*
+  cuda/bindings/cufile.cpp: In function ‘PyObject* __pyx_f_4cuda_8bindings_6cufile_stream_register(intptr_t, unsigned int, int)’:
+  cuda/bindings/cufile.cpp:26557:77: warning: invalid conversion from ‘void*’ to ‘CUstream’ {aka ‘CUstream_st*’} [-fpermissive]
+  26557 |         __pyx_t_1 = __pyx_f_4cuda_8bindings_8cycufile_cuFileStreamRegister(((void *)__pyx_v_stream), __pyx_v_flags); if (unlikely(__pyx_t_1 == CUFILE_LOADING_ERROR && __Pyx_ErrOccurredWithGIL())) __PYX_ERR(0, 1233, __pyx_L4_error)
+        |                                                                            ~^~~~~~~~~~~~~~~~~~~~~~~
+        |                                                                             |
+        |                                                                             void*
+  cuda/bindings/cufile.cpp: In function ‘PyObject* __pyx_f_4cuda_8bindings_6cufile_stream_deregister(intptr_t, int)’:
+  cuda/bindings/cufile.cpp:26779:79: warning: invalid conversion from ‘void*’ to ‘CUstream’ {aka ‘CUstream_st*’} [-fpermissive]
+  26779 |         __pyx_t_1 = __pyx_f_4cuda_8bindings_8cycufile_cuFileStreamDeregister(((void *)__pyx_v_stream)); if (unlikely(__pyx_t_1 == CUFILE_LOADING_ERROR && __Pyx_ErrOccurredWithGIL())) __PYX_ERR(0, 1239, __pyx_L4_error)
+        |                                                                              ~^~~~~~~~~~~~~~~~~~~~~~~
+        |                                                                               |
+        |                                                                               void*
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cufile.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cufile.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cycufile' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cycufile.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cycufile.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/cycufile.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cycufile.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.runtime' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I./cuda/bindings/_lib -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/runtime.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/runtime.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  cuda/bindings/runtime.cpp: In function ‘int __pyx_pf_4cuda_8bindings_7runtime_25cudaGraphKernelNodeUpdate_10updateData_2__set__(__pyx_obj_4cuda_8bindings_7runtime_cudaGraphKernelNodeUpdate*, __pyx_obj_4cuda_8bindings_7runtime_anon_union7*)’:
+  cuda/bindings/runtime.cpp:241068:16: warning: ‘void* memcpy(void*, const void*, size_t)’ copying an object of non-trivial type ‘union cudaGraphKernelNodeUpdate::<unnamed>’ from an array of ‘union __pyx_pf_4cuda_8bindings_7runtime_25cudaGraphKernelNodeUpdate_10updateData_2__set__(__pyx_obj_4cuda_8bindings_7runtime_cudaGraphKernelNodeUpdate*, __pyx_obj_4cuda_8bindings_7runtime_anon_union7*)::anon_union7’ [-Wclass-memaccess]
+  241068 |   (void)(memcpy((&(__pyx_v_self->_pvt_ptr[0]).updateData), ((union anon_union7 *)((__pyx_t_4cuda_8bindings_7runtime_void_ptr)__pyx_t_4)), (sizeof((__pyx_v_self->_pvt_ptr[0]).updateData))));
+         |          ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  In file included from cuda/bindings/runtime.cpp:1178:
+  /usr/local/cuda/include/driver_types.h:3639:11: note: ‘union cudaGraphKernelNodeUpdate::<unnamed>’ declared here
+   3639 |     union {
+        |           ^
+  cuda/bindings/runtime.cpp: In function ‘cudaLimit __Pyx_PyLong_As_enum__cudaLimit(PyObject*)’:
+  cuda/bindings/runtime.cpp:548529: note: ‘-Wmisleading-indentation’ is disabled from this point onwards, since column-tracking was disabled due to the size of the code/headers
+  548529 |         if (unlikely(ret))
+         |
+  cuda/bindings/runtime.cpp:548529: note: adding ‘-flarge-source-files’ will allow for more column-tracking support, at the expense of compilation time and memory
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/runtime.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/runtime.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.nvvm' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/nvvm.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/nvvm.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/nvvm.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/nvvm.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.nvjitlink' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/nvjitlink.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/nvjitlink.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/nvjitlink.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/nvjitlink.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.driver' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I./cuda/bindings/_lib -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/driver.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/driver.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  cuda/bindings/driver.cpp: In function ‘PyObject* __pyx_pw_4cuda_8bindings_6driver_821cuDeviceGetP2PAttribute(PyObject*, PyObject* const*, Py_ssize_t, PyObject*)’:
+  cuda/bindings/driver.cpp:544089: note: ‘-Wmisleading-indentation’ is disabled from this point onwards, since column-tracking was disabled due to the size of the code/headers
+  544089 |     } else if (unlikely(__pyx_nargs != 3)) {
+         |
+  cuda/bindings/driver.cpp:544089: note: adding ‘-flarge-source-files’ will allow for more column-tracking support, at the expense of compilation time and memory
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/driver.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/driver.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings._internal.utils' extension
+  creating /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_internal
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_internal/utils.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_internal/utils.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  creating /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_internal
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_internal/utils.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_internal/utils.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings._internal.cufile' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_internal/cufile.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_internal/cufile.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  cuda/bindings/_internal/cufile.cpp:3987:12: warning: ‘int __pyx_f_4cuda_8bindings_9_internal_6cufile_get_cuda_version()’ defined but not used [-Wunused-function]
+   3987 | static int __pyx_f_4cuda_8bindings_9_internal_6cufile_get_cuda_version(void) {
+        |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_internal/cufile.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_internal/cufile.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings._internal.nvvm' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_internal/nvvm.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_internal/nvvm.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  cuda/bindings/_internal/nvvm.cpp:2650:12: warning: ‘int __pyx_f_4cuda_8bindings_9_internal_4nvvm_get_cuda_version()’ defined but not used [-Wunused-function]
+   2650 | static int __pyx_f_4cuda_8bindings_9_internal_4nvvm_get_cuda_version(void) {
+        |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_internal/nvvm.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_internal/nvvm.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings._internal.nvjitlink' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_internal/nvjitlink.cpp -o /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_internal/nvjitlink.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  cuda/bindings/_internal/nvjitlink.cpp:2683:12: warning: ‘int __pyx_f_4cuda_8bindings_9_internal_9nvjitlink_get_cuda_version()’ defined but not used [-Wunused-function]
+   2683 | static int __pyx_f_4cuda_8bindings_9_internal_9nvjitlink_get_cuda_version(void) {
+        |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmp1wnq8xip.build-temp/cuda/bindings/_internal/nvjitlink.o -L/home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages -L/home/rladmin/asloboda/miniconda3/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_internal/nvjitlink.cpython-312-x86_64-linux-gnu.so
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_bindings/cydriver.cpython-312-x86_64-linux-gnu.so -> cuda/bindings/_bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_bindings/cynvrtc.cpython-312-x86_64-linux-gnu.so -> cuda/bindings/_bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_bindings/cyruntime.cpython-312-x86_64-linux-gnu.so -> cuda/bindings/_bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_bindings/cyruntime_ptds.cpython-312-x86_64-linux-gnu.so -> cuda/bindings/_bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cynvrtc.cpython-312-x86_64-linux-gnu.so -> cuda/bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cyruntime.cpython-312-x86_64-linux-gnu.so -> cuda/bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cydriver.cpython-312-x86_64-linux-gnu.so -> cuda/bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cynvjitlink.cpython-312-x86_64-linux-gnu.so -> cuda/bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/nvrtc.cpython-312-x86_64-linux-gnu.so -> cuda/bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cynvvm.cpython-312-x86_64-linux-gnu.so -> cuda/bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cufile.cpython-312-x86_64-linux-gnu.so -> cuda/bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/cycufile.cpython-312-x86_64-linux-gnu.so -> cuda/bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/runtime.cpython-312-x86_64-linux-gnu.so -> cuda/bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/nvvm.cpython-312-x86_64-linux-gnu.so -> cuda/bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/nvjitlink.cpython-312-x86_64-linux-gnu.so -> cuda/bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/driver.cpython-312-x86_64-linux-gnu.so -> cuda/bindings
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_internal/utils.cpython-312-x86_64-linux-gnu.so -> cuda/bindings/_internal
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_internal/cufile.cpython-312-x86_64-linux-gnu.so -> cuda/bindings/_internal
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_internal/nvvm.cpython-312-x86_64-linux-gnu.so -> cuda/bindings/_internal
+  copying /tmp/tmp_bqe61qq.build-lib/cuda/bindings/_internal/nvjitlink.cpython-312-x86_64-linux-gnu.so -> cuda/bindings/_internal
+  running egg_info
+  creating /tmp/tmp1wnq8xip.build-temp/cuda_bindings.egg-info
+  writing /tmp/tmp1wnq8xip.build-temp/cuda_bindings.egg-info/PKG-INFO
+  writing dependency_links to /tmp/tmp1wnq8xip.build-temp/cuda_bindings.egg-info/dependency_links.txt
+  writing requirements to /tmp/tmp1wnq8xip.build-temp/cuda_bindings.egg-info/requires.txt
+  writing top-level names to /tmp/tmp1wnq8xip.build-temp/cuda_bindings.egg-info/top_level.txt
+  writing manifest file '/tmp/tmp1wnq8xip.build-temp/cuda_bindings.egg-info/SOURCES.txt'
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  reading manifest file '/tmp/tmp1wnq8xip.build-temp/cuda_bindings.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no previously-included files found matching 'cuda/bindings'
+  warning: no previously-included files found matching 'cuda?bindings'
+  warning: no previously-included files found matching 'cuda/bindings/_bindings'
+  warning: no previously-included files found matching 'cuda?bindings?_bindings'
+  adding license file 'LICENSE'
+  writing manifest file '/tmp/tmp1wnq8xip.build-temp/cuda_bindings.egg-info/SOURCES.txt'
+  Editable install will be performed using a meta path finder.
+
+  Options like `package-data`, `include/exclude-package-data` or
+  `packages.find.exclude/include` may have no effect.
+
+  adding '__editable___cuda_bindings_13_0_1_finder.py'
+  adding '__editable__.cuda_bindings-13.0.1.pth'
+  creating '/tmp/pip-wheel-307jr7ub/.tmp-tltbeoq5/cuda_bindings-13.0.1-0.editable-cp312-cp312-linux_x86_64.whl' and adding '/tmp/tmpnrzd3w55cuda_bindings-13.0.1-0.editable-cp312-cp312-linux_x86_64.whl' to it
+  adding 'cuda_bindings-13.0.1.dist-info/licenses/LICENSE'
+  adding 'cuda_bindings-13.0.1.dist-info/METADATA'
+  adding 'cuda_bindings-13.0.1.dist-info/WHEEL'
+  adding 'cuda_bindings-13.0.1.dist-info/top_level.txt'
+  adding 'cuda_bindings-13.0.1.dist-info/RECORD'
+  /tmp/pip-build-env-qjb8153c/overlay/lib/python3.12/site-packages/setuptools/command/editable_wheel.py:351: InformationOnly: Editable installation.
+  !!
+
+          ********************************************************************************
+          Please be careful with folders in your working directory with the same
+          name as your package as they may take precedence during imports.
+          ********************************************************************************
+
+  !!
+    with strategy, WheelFile(wheel_path, "w") as wheel_obj:
+  Building editable for cuda-bindings (pyproject.toml): finished with status 'done'
+  Created wheel for cuda-bindings: filename=cuda_bindings-13.0.1-0.editable-cp312-cp312-linux_x86_64.whl size=8502 sha256=0ec1486c74f5de6bfee19d4c8bbd2b3096054bd455fe14919ed1ec307c4588d1
+  Stored in directory: /tmp/pip-ephem-wheel-cache-s8u6m1zo/wheels/9a/21/f6/cdc0daa9811793b7707cfaa68ef6897c834e61a2526b710c7c
+Successfully built cuda-bindings
+Installing collected packages: cuda-bindings
+  Attempting uninstall: cuda-bindings
+    Found existing installation: cuda-bindings 13.0.1
+    Uninstalling cuda-bindings-13.0.1:
+      Removing file or directory /home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages/__editable__.cuda_bindings-13.0.1.pth
+      Removing file or directory /home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages/__editable___cuda_bindings_13_0_1_finder.py
+      Removing file or directory /home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages/__pycache__/__editable___cuda_bindings_13_0_1_finder.cpython-312.pyc
+      Removing file or directory /home/rladmin/asloboda/miniconda3/lib/python3.12/site-packages/cuda_bindings-13.0.1.dist-info/
+      Successfully uninstalled cuda-bindings-13.0.1
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+cuda-python 12.8.0 requires cuda-bindings~=12.8.0, but you have cuda-bindings 13.0.1 which is incompatible.
+cudf-polars-cu12 25.4.0 requires pylibcudf-cu12==25.4.*, but you have pylibcudf-cu12 25.6.0 which is incompatible.
+Successfully installed cuda-bindings-13.0.1
+Using pip 24.0 from /home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip (python 3.12)
+Non-user install because user site-packages disabled
+Created temporary directory: /tmp/pip-build-tracker-o6o52eyq
+Initialized build tracking at /tmp/pip-build-tracker-o6o52eyq
+Created build tracker: /tmp/pip-build-tracker-o6o52eyq
+Entered build tracker: /tmp/pip-build-tracker-o6o52eyq
+Created temporary directory: /tmp/pip-install-27drs0ok
+Created temporary directory: /tmp/pip-ephem-wheel-cache-lqoqt08g
+Obtaining file:///home/rladmin/cchia/cuda-python/cuda_bindings
+  Added file:///home/rladmin/cchia/cuda-python/cuda_bindings to build tracker '/tmp/pip-build-tracker-o6o52eyq'
+  Created temporary directory: /tmp/pip-build-env-zoqqqe_z
+  Installing build dependencies: started
+  Running command pip subprocess to install build dependencies
+  Using pip 24.0 from /home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip (python 3.12)
+  Collecting setuptools>=77.0.0
+    Obtaining dependency information for setuptools>=77.0.0 from https://files.pythonhosted.org/packages/a3/dc/17031897dae0efacfea57dfd3a82fdd2a2aeb58e0ff71b77b87e44edc772/setuptools-80.9.0-py3-none-any.whl.metadata
+    Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+  Collecting cython<3.2,>=3.1
+    Obtaining dependency information for cython<3.2,>=3.1 from https://files.pythonhosted.org/packages/34/f8/0b98537f0b4e8c01f76d2a6cf75389987538e4d4ac9faf25836fd18c9689/cython-3.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata
+    Using cached cython-3.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.0 kB)
+  Collecting pyclibrary>=0.1.7
+    Obtaining dependency information for pyclibrary>=0.1.7 from https://files.pythonhosted.org/packages/56/2f/5b214a00afd5407d7e174a35e8244174f6f4445a0a9f0a55cafd209af963/pyclibrary-0.3.0-py3-none-any.whl.metadata
+    Using cached pyclibrary-0.3.0-py3-none-any.whl.metadata (4.9 kB)
+  Collecting pyparsing<4,>=2.3.1 (from pyclibrary>=0.1.7)
+    Obtaining dependency information for pyparsing<4,>=2.3.1 from https://files.pythonhosted.org/packages/10/5e/1aa9a93198c6b64513c9d7752de7422c06402de6600a8767da1524f9570b/pyparsing-3.2.5-py3-none-any.whl.metadata
+    Using cached pyparsing-3.2.5-py3-none-any.whl.metadata (5.0 kB)
+  Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+  Using cached cython-3.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.3 MB)
+  Using cached pyclibrary-0.3.0-py3-none-any.whl (562 kB)
+  Using cached pyparsing-3.2.5-py3-none-any.whl (113 kB)
+  Installing collected packages: setuptools, pyparsing, cython, pyclibrary
+    Creating /tmp/pip-build-env-zoqqqe_z/overlay/bin
+    changing mode of /tmp/pip-build-env-zoqqqe_z/overlay/bin/cygdb to 775
+    changing mode of /tmp/pip-build-env-zoqqqe_z/overlay/bin/cython to 775
+    changing mode of /tmp/pip-build-env-zoqqqe_z/overlay/bin/cythonize to 775
+  Successfully installed cython-3.1.4 pyclibrary-0.3.0 pyparsing-3.2.5 setuptools-80.9.0
+
+  [notice] A new release of pip is available: 24.0 -> 25.2
+  [notice] To update, run: pip install --upgrade pip
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Running command Checking if build backend supports build_editable
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Running command Getting requirements to build editable
+  performance hint: cuda/bindings/runtime.pyx:24749:45: Exception check after calling 'cudaCreateChannelDesc' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'cudaCreateChannelDesc' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/runtime.pyx:31184:43: Exception check after calling 'make_cudaPitchedPtr' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'make_cudaPitchedPtr' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/runtime.pyx:31217:36: Exception check after calling 'make_cudaPos' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'make_cudaPos' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/runtime.pyx:31251:39: Exception check after calling 'make_cudaExtent' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'make_cudaExtent' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: ./cuda/bindings/_internal/cufile.pxd:18:24: No exception value declared for '_cuFileRead' in pxd file.
+  Users cimporting this function and calling it without the gil will always require an exception check.
+  Suggest adding an explicit exception value.
+  performance hint: ./cuda/bindings/_internal/cufile.pxd:19:25: No exception value declared for '_cuFileWrite' in pxd file.
+  Users cimporting this function and calling it without the gil will always require an exception check.
+  Suggest adding an explicit exception value.
+  performance hint: ./cuda/bindings/_internal/cufile.pxd:22:25: No exception value declared for '_cuFileUseCount' in pxd file.
+  Users cimporting this function and calling it without the gil will always require an exception check.
+  Suggest adding an explicit exception value.
+  performance hint: cuda/bindings/cufile.pyx:1082:27: Exception check after calling 'cuFileRead' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'cuFileRead' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/cufile.pyx:1099:28: Exception check after calling 'cuFileWrite' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'cuFileWrite' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/cufile.pyx:1119:31: Exception check after calling 'cuFileUseCount' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare 'cuFileUseCount' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: ./cuda/bindings/cycufile.pxd:333:23: No exception value declared for 'cuFileRead' in pxd file.
+  Users cimporting this function and calling it without the gil will always require an exception check.
+  Suggest adding an explicit exception value.
+  performance hint: ./cuda/bindings/cycufile.pxd:334:24: No exception value declared for 'cuFileWrite' in pxd file.
+  Users cimporting this function and calling it without the gil will always require an exception check.
+  Suggest adding an explicit exception value.
+  performance hint: ./cuda/bindings/cycufile.pxd:337:24: No exception value declared for 'cuFileUseCount' in pxd file.
+  Users cimporting this function and calling it without the gil will always require an exception check.
+  Suggest adding an explicit exception value.
+  performance hint: cuda/bindings/cycufile.pyx:33:30: Exception check after calling '_cuFileRead' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare '_cuFileRead' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/cycufile.pyx:37:31: Exception check after calling '_cuFileWrite' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare '_cuFileWrite' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  performance hint: cuda/bindings/cycufile.pyx:49:34: Exception check after calling '_cuFileUseCount' will always require the GIL to be acquired.
+  Possible solutions:
+        1. Declare '_cuFileUseCount' as 'noexcept' if you control the definition and you're sure you don't want the function to raise exceptions.
+        2. Declare any exception value explicitly for functions in pxd files.
+  Parsing headers in "['/usr/local/cuda/include']" (Caching = False)
+  Parsing driver headers
+  Found CUDA_VERSION: 13000
+  Parsing runtime headers
+  Parsing nvrtc headers
+  Skipping cuda/bindings/cyruntime.pxd.in (No change)
+  Skipping cuda/bindings/cydriver.pyx.in (No change)
+  Skipping cuda/bindings/cynvrtc.pyx.in (No change)
+  Skipping cuda/bindings/driver.pxd.in (No change)
+  Skipping cuda/bindings/runtime.pyx.in (No change)
+  Skipping cuda/bindings/cydriver.pxd.in (No change)
+  Skipping cuda/bindings/cyruntime_types.pxi.in (No change)
+  Skipping cuda/bindings/driver.pyx.in (No change)
+  Skipping cuda/bindings/nvrtc.pyx.in (No change)
+  Skipping cuda/bindings/cyruntime_functions.pxi.in (No change)
+  Skipping cuda/bindings/nvrtc.pxd.in (No change)
+  Skipping cuda/bindings/runtime.pxd.in (No change)
+  Skipping cuda/bindings/cynvrtc.pxd.in (No change)
+  Skipping cuda/bindings/cyruntime.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cydriver.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cynvrtc.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cydriver.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime_ptds.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime_ptds.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cynvrtc.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime.pyx.in (No change)
+  Skipping cuda/bindings/_lib/utils.pxd.in (No change)
+  Skipping cuda/bindings/_lib/utils.pxi.in (No change)
+  Compiling cuda/bindings/_bindings/cydriver.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libc/stdint.pxd.
+  Compiling cuda/bindings/_bindings/cynvrtc.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libc/stdint.pxd.
+  Compiling cuda/bindings/_bindings/cyruntime.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libc/string.pxd.
+  Compiling cuda/bindings/cynvrtc.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libc/stdint.pxd.
+  Compiling cuda/bindings/cyruntime.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libc/stdint.pxd.
+  Compiling cuda/bindings/cydriver.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libc/stdint.pxd.
+  Compiling cuda/bindings/cynvjitlink.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libc/stdint.pxd.
+  Compiling cuda/bindings/nvrtc.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libcpp/vector.pxd.
+  Compiling cuda/bindings/cufile.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/posix/types.pxd.
+  Compiling cuda/bindings/cycufile.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/posix/types.pxd.
+  Compiling cuda/bindings/runtime.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libcpp/vector.pxd.
+  Compiling cuda/bindings/nvvm.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libcpp/vector.pxd.
+  Compiling cuda/bindings/nvjitlink.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libcpp/vector.pxd.
+  Compiling cuda/bindings/driver.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libcpp/vector.pxd.
+  Compiling cuda/bindings/_internal/utils.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libcpp/vector.pxd.
+  Compiling cuda/bindings/_internal/cufile.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/posix/types.pxd.
+  Compiling cuda/bindings/_internal/nvvm.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libc/stdint.pxd.
+  Compiling cuda/bindings/_internal/nvjitlink.pyx because it depends on /tmp/pip-build-env-zoqqqe_z/overlay/lib/python3.12/site-packages/Cython/Includes/libc/stdint.pxd.
+  [ 1/18] Cythonizing cuda/bindings/_bindings/cydriver.pyx
+  [ 2/18] Cythonizing cuda/bindings/_bindings/cynvrtc.pyx
+  [ 3/18] Cythonizing cuda/bindings/_bindings/cyruntime.pyx
+  [ 4/18] Cythonizing cuda/bindings/_internal/nvjitlink.pyx
+  [ 5/18] Cythonizing cuda/bindings/_internal/nvvm.pyx
+  [ 6/18] Cythonizing cuda/bindings/cyruntime.pyx
+  [ 7/18] Cythonizing cuda/bindings/driver.pyx
+  [ 8/18] Cythonizing cuda/bindings/nvjitlink.pyx
+  [ 9/18] Cythonizing cuda/bindings/nvrtc.pyx
+  [10/18] Cythonizing cuda/bindings/runtime.pyx
+  [11/18] Cythonizing cuda/bindings/_internal/cufile.pyx
+  [12/18] Cythonizing cuda/bindings/_internal/utils.pyx
+  [13/18] Cythonizing cuda/bindings/cufile.pyx
+  [14/18] Cythonizing cuda/bindings/cycufile.pyx
+  [15/18] Cythonizing cuda/bindings/cydriver.pyx
+  [16/18] Cythonizing cuda/bindings/cynvjitlink.pyx
+  [17/18] Cythonizing cuda/bindings/cynvrtc.pyx
+  [18/18] Cythonizing cuda/bindings/nvvm.pyx
+  running egg_info
+  writing cuda_bindings.egg-info/PKG-INFO
+  writing dependency_links to cuda_bindings.egg-info/dependency_links.txt
+  writing requirements to cuda_bindings.egg-info/requires.txt
+  writing top-level names to cuda_bindings.egg-info/top_level.txt
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  reading manifest file 'cuda_bindings.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no previously-included files found matching 'cuda/bindings'
+  warning: no previously-included files found matching 'cuda?bindings'
+  warning: no previously-included files found matching 'cuda/bindings/_bindings'
+  warning: no previously-included files found matching 'cuda?bindings?_bindings'
+  adding license file 'LICENSE'
+  writing manifest file 'cuda_bindings.egg-info/SOURCES.txt'
+  Getting requirements to build editable: finished with status 'done'
+  Created temporary directory: /tmp/pip-modern-metadata-tzfza9fd
+  Preparing editable metadata (pyproject.toml): started
+  Running command Preparing editable metadata (pyproject.toml)
+  Parsing headers in "['/usr/local/cuda/include']" (Caching = False)
+  Parsing driver headers
+  Found CUDA_VERSION: 13000
+  Parsing runtime headers
+  Parsing nvrtc headers
+  Skipping cuda/bindings/cyruntime.pxd.in (No change)
+  Skipping cuda/bindings/cydriver.pyx.in (No change)
+  Skipping cuda/bindings/cynvrtc.pyx.in (No change)
+  Skipping cuda/bindings/driver.pxd.in (No change)
+  Skipping cuda/bindings/runtime.pyx.in (No change)
+  Skipping cuda/bindings/cydriver.pxd.in (No change)
+  Skipping cuda/bindings/cyruntime_types.pxi.in (No change)
+  Skipping cuda/bindings/driver.pyx.in (No change)
+  Skipping cuda/bindings/nvrtc.pyx.in (No change)
+  Skipping cuda/bindings/cyruntime_functions.pxi.in (No change)
+  Skipping cuda/bindings/nvrtc.pxd.in (No change)
+  Skipping cuda/bindings/runtime.pxd.in (No change)
+  Skipping cuda/bindings/cynvrtc.pxd.in (No change)
+  Skipping cuda/bindings/cyruntime.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cydriver.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cynvrtc.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cydriver.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime_ptds.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime_ptds.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cynvrtc.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime.pyx.in (No change)
+  Skipping cuda/bindings/_lib/utils.pxd.in (No change)
+  Skipping cuda/bindings/_lib/utils.pxi.in (No change)
+  running dist_info
+  creating /tmp/pip-modern-metadata-tzfza9fd/cuda_bindings.egg-info
+  writing /tmp/pip-modern-metadata-tzfza9fd/cuda_bindings.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-modern-metadata-tzfza9fd/cuda_bindings.egg-info/dependency_links.txt
+  writing requirements to /tmp/pip-modern-metadata-tzfza9fd/cuda_bindings.egg-info/requires.txt
+  writing top-level names to /tmp/pip-modern-metadata-tzfza9fd/cuda_bindings.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-modern-metadata-tzfza9fd/cuda_bindings.egg-info/SOURCES.txt'
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  reading manifest file '/tmp/pip-modern-metadata-tzfza9fd/cuda_bindings.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no previously-included files found matching 'cuda/bindings'
+  warning: no previously-included files found matching 'cuda?bindings'
+  warning: no previously-included files found matching 'cuda/bindings/_bindings'
+  warning: no previously-included files found matching 'cuda?bindings?_bindings'
+  adding license file 'LICENSE'
+  writing manifest file '/tmp/pip-modern-metadata-tzfza9fd/cuda_bindings.egg-info/SOURCES.txt'
+  creating '/tmp/pip-modern-metadata-tzfza9fd/cuda_bindings-13.0.1.dist-info'
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+  Source in /home/rladmin/cchia/cuda-python/cuda_bindings has version 13.0.1, which satisfies requirement cuda-bindings==13.0.1 from file:///home/rladmin/cchia/cuda-python/cuda_bindings
+  Removed cuda-bindings==13.0.1 from file:///home/rladmin/cchia/cuda-python/cuda_bindings from build tracker '/tmp/pip-build-tracker-o6o52eyq'
+1 location(s) to search for versions of cuda-pathfinder:
+* https://pypi.org/simple/cuda-pathfinder/
+Fetching project page and analyzing links: https://pypi.org/simple/cuda-pathfinder/
+Getting page https://pypi.org/simple/cuda-pathfinder/
+Found index url https://pypi.org/simple/
+Looking up "https://pypi.org/simple/cuda-pathfinder/" in the cache
+Request header has "max_age" as 0, cache bypassed
+Starting new HTTPS connection (1): pypi.org:443
+https://pypi.org:443 "GET /simple/cuda-pathfinder/ HTTP/1.1" 304 0
+Fetched page https://pypi.org/simple/cuda-pathfinder/ as application/vnd.pypi.simple.v1+json
+  Found link https://files.pythonhosted.org/packages/a9/0d/83f3666d5ed9c4db9c284b39e6a52f717a823c3f55044517cae41d8e87b0/cuda_pathfinder-0.0.0-py3-none-any.whl (from https://pypi.org/simple/cuda-pathfinder/) (requires-python:>=3.9), version: 0.0.0
+  Found link https://files.pythonhosted.org/packages/d1/c9/2cfeab04fb2113868914d970619f77e34733dca97326ac1aac100e906a1d/cuda_pathfinder-0.0.0.tar.gz (from https://pypi.org/simple/cuda-pathfinder/) (requires-python:>=3.9), version: 0.0.0
+  Found link https://files.pythonhosted.org/packages/61/85/0d697ee88f75d0bf8a8ffc0a8d2ac90b969c0074fb89f91a36c7895c7a33/cuda_pathfinder-1.0.0-py3-none-any.whl (from https://pypi.org/simple/cuda-pathfinder/) (requires-python:>=3.9), version: 1.0.0
+  Found link https://files.pythonhosted.org/packages/52/07/7978a4c4d8e70620170aa247ce16241a72d4cf6e4336bd3b296926baf7df/cuda_pathfinder-1.1.0-py3-none-any.whl (from https://pypi.org/simple/cuda-pathfinder/) (requires-python:>=3.9), version: 1.1.0
+  Found link https://files.pythonhosted.org/packages/35/b6/8aae7bd6bbf36e309373bb480acc8b27c272790113954d5c52e92857357e/cuda_pathfinder-1.2.0-py3-none-any.whl (from https://pypi.org/simple/cuda-pathfinder/) (requires-python:>=3.9), version: 1.2.0
+  Found link https://files.pythonhosted.org/packages/22/54/6231878f6fc490f222c87190ce12196b67b7700b30818882a87f478e4944/cuda_pathfinder-1.2.1-py3-none-any.whl (from https://pypi.org/simple/cuda-pathfinder/) (requires-python:>=3.9), version: 1.2.1
+  Found link https://files.pythonhosted.org/packages/9b/c0/3cf324a6a3419e8f6ee44fbdf1d9297cc9b353f30c77b2827a8df66ca90d/cuda_pathfinder-1.2.2-py3-none-any.whl (from https://pypi.org/simple/cuda-pathfinder/) (requires-python:>=3.9), version: 1.2.2
+  Found link https://files.pythonhosted.org/packages/59/a3/57d2f674872f4e6b7da569b6df96ed80dc5c000cfd847ebeba5124faae4b/cuda_pathfinder-1.2.3-py3-none-any.whl (from https://pypi.org/simple/cuda-pathfinder/) (requires-python:>=3.9), version: 1.2.3
+Skipping link: not a file: https://pypi.org/simple/cuda-pathfinder/
+Given no hashes to check 5 links for project 'cuda-pathfinder': discarding no candidates
+Collecting cuda-pathfinder~=1.1 (from cuda-bindings==13.0.1)
+  Obtaining dependency information for cuda-pathfinder~=1.1 from https://files.pythonhosted.org/packages/59/a3/57d2f674872f4e6b7da569b6df96ed80dc5c000cfd847ebeba5124faae4b/cuda_pathfinder-1.2.3-py3-none-any.whl.metadata
+  Created temporary directory: /tmp/pip-unpack-_utlv6ik
+  Looking up "https://files.pythonhosted.org/packages/59/a3/57d2f674872f4e6b7da569b6df96ed80dc5c000cfd847ebeba5124faae4b/cuda_pathfinder-1.2.3-py3-none-any.whl.metadata" in the cache
+  Current age based on date: 253390
+  Ignoring unknown cache-control directive: immutable
+  Freshness lifetime from max-age: 365000000
+  The response is "fresh", returning cached response
+  365000000 > 253390
+  Using cached cuda_pathfinder-1.2.3-py3-none-any.whl.metadata (3.4 kB)
+  Created temporary directory: /tmp/pip-metadata-nv74jiuf
+Created temporary directory: /tmp/pip-unpack-3l8mogcn
+Looking up "https://files.pythonhosted.org/packages/59/a3/57d2f674872f4e6b7da569b6df96ed80dc5c000cfd847ebeba5124faae4b/cuda_pathfinder-1.2.3-py3-none-any.whl" in the cache
+Current age based on date: 253390
+Ignoring unknown cache-control directive: immutable
+Freshness lifetime from max-age: 365000000
+The response is "fresh", returning cached response
+365000000 > 253390
+Using cached cuda_pathfinder-1.2.3-py3-none-any.whl (26 kB)
+Downloading link https://files.pythonhosted.org/packages/59/a3/57d2f674872f4e6b7da569b6df96ed80dc5c000cfd847ebeba5124faae4b/cuda_pathfinder-1.2.3-py3-none-any.whl (from https://pypi.org/simple/cuda-pathfinder/) (requires-python:>=3.9) to /tmp/pip-unpack-3l8mogcn/cuda_pathfinder-1.2.3-py3-none-any.whl
+Building wheels for collected packages: cuda-bindings
+  Created temporary directory: /tmp/pip-wheel-j80g81fu
+  Destination directory: /tmp/pip-wheel-j80g81fu
+  Building editable for cuda-bindings (pyproject.toml): started
+  Running command Building editable for cuda-bindings (pyproject.toml)
+  Parsing headers in "['/usr/local/cuda/include']" (Caching = False)
+  Parsing driver headers
+  Found CUDA_VERSION: 13000
+  Parsing runtime headers
+  Parsing nvrtc headers
+  Skipping cuda/bindings/cyruntime.pxd.in (No change)
+  Skipping cuda/bindings/cydriver.pyx.in (No change)
+  Skipping cuda/bindings/cynvrtc.pyx.in (No change)
+  Skipping cuda/bindings/driver.pxd.in (No change)
+  Skipping cuda/bindings/runtime.pyx.in (No change)
+  Skipping cuda/bindings/cydriver.pxd.in (No change)
+  Skipping cuda/bindings/cyruntime_types.pxi.in (No change)
+  Skipping cuda/bindings/driver.pyx.in (No change)
+  Skipping cuda/bindings/nvrtc.pyx.in (No change)
+  Skipping cuda/bindings/cyruntime_functions.pxi.in (No change)
+  Skipping cuda/bindings/nvrtc.pxd.in (No change)
+  Skipping cuda/bindings/runtime.pxd.in (No change)
+  Skipping cuda/bindings/cynvrtc.pxd.in (No change)
+  Skipping cuda/bindings/cyruntime.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cydriver.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cynvrtc.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cydriver.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime_ptds.pyx.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime_ptds.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cynvrtc.pxd.in (No change)
+  Skipping cuda/bindings/_bindings/cyruntime.pyx.in (No change)
+  Skipping cuda/bindings/_lib/utils.pxd.in (No change)
+  Skipping cuda/bindings/_lib/utils.pxi.in (No change)
+  running editable_wheel
+  creating /tmp/pip-wheel-j80g81fu/.tmp-vmx5_xk_/cuda_bindings.egg-info
+  writing /tmp/pip-wheel-j80g81fu/.tmp-vmx5_xk_/cuda_bindings.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-wheel-j80g81fu/.tmp-vmx5_xk_/cuda_bindings.egg-info/dependency_links.txt
+  writing requirements to /tmp/pip-wheel-j80g81fu/.tmp-vmx5_xk_/cuda_bindings.egg-info/requires.txt
+  writing top-level names to /tmp/pip-wheel-j80g81fu/.tmp-vmx5_xk_/cuda_bindings.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-wheel-j80g81fu/.tmp-vmx5_xk_/cuda_bindings.egg-info/SOURCES.txt'
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_profiler_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/nvrtc.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda_runtime_api.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/device_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/driver_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/library_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/surface_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/texture_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/vector_types.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cuda.h won't be automatically included in the manifest: the path must be relative
+  dependency /usr/local/cuda/include/cudaProfiler.h won't be automatically included in the manifest: the path must be relative
+  reading manifest file '/tmp/pip-wheel-j80g81fu/.tmp-vmx5_xk_/cuda_bindings.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no previously-included files found matching 'cuda/bindings'
+  warning: no previously-included files found matching 'cuda?bindings'
+  warning: no previously-included files found matching 'cuda/bindings/_bindings'
+  warning: no previously-included files found matching 'cuda?bindings?_bindings'
+  adding license file 'LICENSE'
+  writing manifest file '/tmp/pip-wheel-j80g81fu/.tmp-vmx5_xk_/cuda_bindings.egg-info/SOURCES.txt'
+  creating '/tmp/pip-wheel-j80g81fu/.tmp-vmx5_xk_/cuda_bindings-13.0.1.dist-info'
+  creating /tmp/pip-wheel-j80g81fu/.tmp-vmx5_xk_/cuda_bindings-13.0.1.dist-info/WHEEL
+  running build_py
+  running build_ext
+  building 'cuda.bindings._bindings.cydriver' extension
+  creating /tmp/tmpfr9ktynf.build-temp/cuda/bindings/_bindings
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I./cuda/bindings/_bindings -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/cchia/cuda-python/venvs/cuda_python/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_bindings/cydriver.cpp -o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/_bindings/cydriver.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I./cuda/bindings/_bindings -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/cchia/cuda-python/venvs/cuda_python/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_bindings/loader.cpp -o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/_bindings/loader.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  creating /tmp/tmp4kj862k_.build-lib/cuda/bindings/_bindings
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmpfr9ktynf.build-temp/cuda/bindings/_bindings/cydriver.o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/_bindings/loader.o -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp4kj862k_.build-lib/cuda/bindings/_bindings/cydriver.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings._bindings.cynvrtc' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/cchia/cuda-python/venvs/cuda_python/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_bindings/cynvrtc.cpp -o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/_bindings/cynvrtc.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmpfr9ktynf.build-temp/cuda/bindings/_bindings/cynvrtc.o -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp4kj862k_.build-lib/cuda/bindings/_bindings/cynvrtc.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings._bindings.cyruntime' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/cchia/cuda-python/venvs/cuda_python/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_bindings/cyruntime.cpp -o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/_bindings/cyruntime.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmpfr9ktynf.build-temp/cuda/bindings/_bindings/cyruntime.o -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -lcudart_static -lrt -o /tmp/tmp4kj862k_.build-lib/cuda/bindings/_bindings/cyruntime.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings._bindings.cyruntime_ptds' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/cchia/cuda-python/venvs/cuda_python/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/_bindings/cyruntime_ptds.cpp -o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/_bindings/cyruntime_ptds.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmpfr9ktynf.build-temp/cuda/bindings/_bindings/cyruntime_ptds.o -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -lcudart_static -lrt -o /tmp/tmp4kj862k_.build-lib/cuda/bindings/_bindings/cyruntime_ptds.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cynvrtc' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/cchia/cuda-python/venvs/cuda_python/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cynvrtc.cpp -o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/cynvrtc.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmpfr9ktynf.build-temp/cuda/bindings/cynvrtc.o -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp4kj862k_.build-lib/cuda/bindings/cynvrtc.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cyruntime' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/cchia/cuda-python/venvs/cuda_python/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cyruntime.cpp -o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/cyruntime.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmpfr9ktynf.build-temp/cuda/bindings/cyruntime.o -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp4kj862k_.build-lib/cuda/bindings/cyruntime.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cydriver' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/cchia/cuda-python/venvs/cuda_python/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cydriver.cpp -o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/cydriver.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmpfr9ktynf.build-temp/cuda/bindings/cydriver.o -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp4kj862k_.build-lib/cuda/bindings/cydriver.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cynvjitlink' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/cchia/cuda-python/venvs/cuda_python/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cynvjitlink.cpp -o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/cynvjitlink.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmpfr9ktynf.build-temp/cuda/bindings/cynvjitlink.o -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp4kj862k_.build-lib/cuda/bindings/cynvjitlink.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.nvrtc' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I./cuda/bindings/_lib -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/cchia/cuda-python/venvs/cuda_python/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/nvrtc.cpp -o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/nvrtc.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmpfr9ktynf.build-temp/cuda/bindings/nvrtc.o -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp4kj862k_.build-lib/cuda/bindings/nvrtc.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cynvvm' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/cchia/cuda-python/venvs/cuda_python/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cynvvm.cpp -o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/cynvvm.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -shared /tmp/tmpfr9ktynf.build-temp/cuda/bindings/cynvvm.o -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages -L/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -o /tmp/tmp4kj862k_.build-lib/cuda/bindings/cynvvm.cpython-312-x86_64-linux-gnu.so
+  building 'cuda.bindings.cufile' extension
+  g++ -pthread -B /home/rladmin/asloboda/miniconda3/compiler_compat -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -O2 -isystem /home/rladmin/asloboda/miniconda3/include -fPIC -I/home/rladmin/asloboda/miniconda3/include -I/usr/local/cuda/include -I/home/rladmin/cchia/cuda-python/venvs/cuda_python/include -I/home/rladmin/asloboda/miniconda3/include/python3.12 -c cuda/bindings/cufile.cpp -o /tmp/tmpfr9ktynf.build-temp/cuda/bindings/cufile.o -std=c++14 -fpermissive -Wno-deprecated-declarations -fno-var-tracking-assignments -O3
+  cuda/bindings/cufile.cpp: In function ‘PyObject* __pyx_f_4cuda_8bindings_6cufile_read_async(intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, int)’:
+  cuda/bindings/cufile.cpp:26033:295: warning: invalid conversion from ‘void*’ to ‘CUstream’ {aka ‘CUstream_st*’} [-fpermissive]
+  26033 |         __pyx_t_1 = __pyx_f_4cuda_8bindings_8cycufile_cuFileReadAsync(((__pyx_t_4cuda_8bindings_6cufile_Handle)__pyx_v_fh), ((void *)__pyx_v_buf_ptr_base), ((size_t *)__pyx_v_size_p), ((off_t *)__pyx_v_file_offset_p), ((off_t *)__pyx_v_buf_ptr_offset_p), ((Py_ssize_t *)__pyx_v_bytes_read_p), ((void *)__pyx_v_stream)); if (unlikely(__pyx_t_1 == CUFILE_LOADING_ERROR && __Pyx_ErrOccurredWithGIL())) __PYX_ERR(0, 1221, __pyx_L4_error)
+        |                                                                                                                                                                                                                                                                                                      ~^~~~~~~~~~~~~~~~~~~~~~~
+        |                                                                                                                                                                                                                                                                                                       |
+        |                                                                                                                                                                                                                                                                                                       void*
+  cuda/bindings/cufile.cpp: In function ‘PyObject* __pyx_f_4cuda_8bindings_6cufile_write_async(intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, int)’:
+  cuda/bindings/cufile.cpp:26295:299: warning: invalid conversion from ‘void*’ to ‘CUstream’ {aka ‘CUstream_st*’} [-fpermissive]
+  26295 |         __pyx_t_1 = __pyx_f_4cuda_8bindings_8cycufile_cuFileWriteAsync(((__pyx_t_4cuda_8bindings_6cufile_Handle)__pyx_v_fh), ((void *)__pyx_v_buf_ptr_base), ((size_t *)__pyx_v_size_p), ((off_t *)__pyx_v_file_offset_p), ((off_t *)__pyx_v_buf_ptr_offset_p), ((Py_ssize_t *)__pyx_v_bytes_written_p), ((void *)__pyx_v_stream)); if (unlikely(__pyx_t_1 == CUFILE_LOADING_ERROR && __Pyx_ErrOccurredWithGIL())) __PYX_ERR(0, 1227, __pyx_L4_error)
+        |                                                                                                                                                                                                                                                                                                          ~^~~~~~~~~~~~~~~~~~~~~~~
+        |                                                                                                                                                                                                                                                                                                           |
+        |                                                                                                                                                                                                                                                                                                           void*
+  cuda/bindings/cufile.cpp: In function ‘PyObject* __pyx_f_4cuda_8bindings_6cufile_stream_register(intptr_t, unsigned int, int)’:
+  cuda/bindings/cufile.cpp:26557:77: warning: invalid conversion from ‘void*’ to ‘CUstream’ {aka ‘CUstream_st*’} [-fpermissive]
+  26557 |         __pyx_t_1 = __pyx_f_4cuda_8bindings_8cycufile_cuFileStreamRegister(((void *)__pyx_v_stream), __pyx_v_flags); if (unlikely(__pyx_t_1 == CUFILE_LOADING_ERROR && __Pyx_ErrOccurredWithGIL())) __PYX_ERR(0, 1233, __pyx_L4_error)
+        |                                                                            ~^~~~~~~~~~~~~~~~~~~~~~~
+        |                                                                             |
+        |                                                                             void*
+  cuda/bindings/cufile.cpp: In function ‘PyObject* __pyx_f_4cuda_8bindings_6cufile_stream_deregister(intptr_t, int)’:
+  cuda/bindings/cufile.cpp:26779:79: warning: invalid conversion from ‘void*’ to ‘CUstream’ {aka ‘CUstream_st*’} [-fpermissive]
+  26779 |         __pyx_t_1 = __pyx_f_4cuda_8bindings_8cycufile_cuFileStreamDeregister(((void *)__pyx_v_stream)); if (unlikely(__pyx_t_1 == CUFILE_LOADING_ERROR && __Pyx_ErrOccurredWithGIL())) __PYX_ERR(0, 1239, __pyx_L4_error)
+        |                                                                              ~^~~~~~~~~~~~~~~~~~~~~~~
+        |                                                                               |
+        |                                                                               void*
+  Building editable for cuda-bindings (pyproject.toml): finished with status 'canceled'
+ERROR: Operation cancelled by user
+Exception information:
+Traceback (most recent call last):
+  File "/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip/_internal/cli/base_command.py", line 180, in exc_logging_wrapper
+    status = run_func(*args)
+             ^^^^^^^^^^^^^^^
+  File "/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip/_internal/cli/req_command.py", line 245, in wrapper
+    return func(self, options, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip/_internal/commands/install.py", line 420, in run
+    _, build_failures = build(
+                        ^^^^^^
+  File "/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip/_internal/wheel_builder.py", line 319, in build
+    wheel_file = _build_one(
+                 ^^^^^^^^^^^
+  File "/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip/_internal/wheel_builder.py", line 193, in _build_one
+    wheel_path = _build_one_inside_env(
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip/_internal/wheel_builder.py", line 226, in _build_one_inside_env
+    wheel_path = build_wheel_editable(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip/_internal/operations/build/wheel_editable.py", line 31, in build_wheel_editable
+    wheel_name = backend.build_editable(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip/_internal/utils/misc.py", line 737, in build_editable
+    return super().build_editable(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_impl.py", line 270, in build_editable
+    return self._call_hook('build_editable', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_impl.py", line 311, in _call_hook
+    self._subprocess_runner(
+  File "/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip/_internal/utils/subprocess.py", line 252, in runner
+    call_subprocess(
+  File "/home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip/_internal/utils/subprocess.py", line 166, in call_subprocess
+    line: str = proc.stdout.readline()
+                ^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Remote version of pip: 25.2
+Local version of pip:  24.0
+Was pip installed by pip? True
+
+[notice] A new release of pip is available: 24.0 -> 25.2
+[notice] To update, run: pip install --upgrade pip
+Removed build tracker: '/tmp/pip-build-tracker-o6o52eyq'
+Using pip 24.0 from /home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip (python 3.12)
+Obtaining file:///home/rladmin/cchia/cuda-python/cuda_bindings
+  Installing build dependencies: started
+  Running command pip subprocess to install build dependencies
+  Collecting setuptools>=77.0.0
+    Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+  Collecting cython<3.2,>=3.1
+    Using cached cython-3.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.0 kB)
+  Collecting pyclibrary>=0.1.7
+    Using cached pyclibrary-0.3.0-py3-none-any.whl.metadata (4.9 kB)
+  Collecting pyparsing<4,>=2.3.1 (from pyclibrary>=0.1.7)
+    Using cached pyparsing-3.2.5-py3-none-any.whl.metadata (5.0 kB)
+  Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+  Using cached cython-3.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.3 MB)
+  Using cached pyclibrary-0.3.0-py3-none-any.whl (562 kB)
+  Using cached pyparsing-3.2.5-py3-none-any.whl (113 kB)
+  Installing collected packages: setuptools, pyparsing, cython, pyclibrary
+  Successfully installed cython-3.1.4 pyclibrary-0.3.0 pyparsing-3.2.5 setuptools-80.9.0
+
+  [notice] A new release of pip is available: 24.0 -> 25.2
+  [notice] To update, run: pip install --upgrade pip
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Running command Checking if build backend supports build_editable
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Running command Getting requirements to build editable
+  Getting requirements to build editable: finished with status 'canceled'
+ERROR: Operation cancelled by user
+
+[notice] A new release of pip is available: 24.0 -> 25.2
+[notice] To update, run: pip install --upgrade pip
+Using pip 24.0 from /home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip (python 3.12)
+Obtaining file:///home/rladmin/cchia/cuda-python/cuda_bindings
+  Installing build dependencies: started
+  Running command pip subprocess to install build dependencies
+  Collecting setuptools>=77.0.0
+    Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+  Collecting cython<3.2,>=3.1
+    Using cached cython-3.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.0 kB)
+  Collecting pyclibrary>=0.1.7
+    Using cached pyclibrary-0.3.0-py3-none-any.whl.metadata (4.9 kB)
+  Collecting pyparsing<4,>=2.3.1 (from pyclibrary>=0.1.7)
+    Using cached pyparsing-3.2.5-py3-none-any.whl.metadata (5.0 kB)
+  Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+  Using cached cython-3.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.3 MB)
+  Using cached pyclibrary-0.3.0-py3-none-any.whl (562 kB)
+  Using cached pyparsing-3.2.5-py3-none-any.whl (113 kB)
+  Installing collected packages: setuptools, pyparsing, cython, pyclibrary
+  Installing build dependencies: finished with status 'canceled'
+ERROR: Operation cancelled by user
+
+[notice] A new release of pip is available: 24.0 -> 25.2
+[notice] To update, run: pip install --upgrade pip
+Using pip 24.0 from /home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip (python 3.12)
+Obtaining file:///home/rladmin/cchia/cuda-python/cuda_bindings
+  Installing build dependencies: started
+  Running command pip subprocess to install build dependencies
+  Collecting setuptools>=77.0.0
+    Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+  Collecting cython<3.2,>=3.1
+    Using cached cython-3.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.0 kB)
+  Collecting pyclibrary>=0.1.7
+    Using cached pyclibrary-0.3.0-py3-none-any.whl.metadata (4.9 kB)
+  Collecting pyparsing<4,>=2.3.1 (from pyclibrary>=0.1.7)
+    Using cached pyparsing-3.2.5-py3-none-any.whl.metadata (5.0 kB)
+  Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+  Using cached cython-3.1.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.3 MB)
+  Using cached pyclibrary-0.3.0-py3-none-any.whl (562 kB)
+  Using cached pyparsing-3.2.5-py3-none-any.whl (113 kB)
+  Installing collected packages: setuptools, pyparsing, cython, pyclibrary
+  Installing build dependencies: finished with status 'canceled'
+ERROR: Operation cancelled by user
+
+[notice] A new release of pip is available: 24.0 -> 25.2
+[notice] To update, run: pip install --upgrade pip
