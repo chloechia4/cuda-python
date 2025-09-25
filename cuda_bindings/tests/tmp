@@ -1,0 +1,12 @@
+Using pip 24.0 from /home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip (python 3.12)
+Obtaining file:///home/rladmin/cchia/cuda-python/cuda_bindings/tests
+ERROR: file:///home/rladmin/cchia/cuda-python/cuda_bindings/tests does not appear to be a Python project: neither 'setup.py' nor 'pyproject.toml' found.
+
+[notice] A new release of pip is available: 24.0 -> 25.2
+[notice] To update, run: pip install --upgrade pip
+Using pip 24.0 from /home/rladmin/cchia/cuda-python/venvs/cuda_python/lib/python3.12/site-packages/pip (python 3.12)
+Obtaining file:///home/rladmin/cchia/cuda-python/cuda_bindings/tests
+ERROR: file:///home/rladmin/cchia/cuda-python/cuda_bindings/tests does not appear to be a Python project: neither 'setup.py' nor 'pyproject.toml' found.
+
+[notice] A new release of pip is available: 24.0 -> 25.2
+[notice] To update, run: pip install --upgrade pip
